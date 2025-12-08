@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo Clicker</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #fff8dc;
+        }
+
+        h1 {
+            color: #d2691e;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #d2691e;
+            font-size: 28px;
+        }
+
+        #cookie {
+            width: 380px;        /* bigger cookie */
+            cursor: pointer;
+            transition: transform 0.1s;
+            margin-top: 20px;
+        }
+
+        #cookie:active {
+            transform: scale(0.9);
+        }
+
+        #score {
+            font-size: 32px;     /* bigger score text */
+            margin-top: 25px;
+        }
+
+        .button {
+            padding: 16px 32px;  /* larger button */
+            font-size: 22px;
+            margin: 20px;
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Cosmo Clicker</h1>
+
+    <h4>Time left: <span id="timer">10</span> seconds</h4>
+
+    <img src="https://1000logos.net/wp-content/uploads/2025/04/BYU-Cougars-Logo-1957.png" 
+         id="cookie" 
+         alt="Cookie">
+
+    <p id="score">Score: 0</p>
+
+    <button class="button" onclick="startGame()">Start / Reset</button>
+
+    <br><br><br><br><br><br><br><br>
+    <a href="music.html" style="font-size: 22px;">Back to the Music</a>
+
+
+<script>
+    let score = 0;
+    let time = 10;
+    let countdown = null;
+
+    const cookie = document.getElementById("cookie");
+    const scoreDisplay = document.getElementById("score");
+    const timerDisplay = document.getElementById("timer");
+
+    cookie.addEventListener("click", () => {
+        if (time > 0) {
+            score++;
+            scoreDisplay.textContent = "Score: " + score;
+        }
+    });
+
+    function startGame() {
+        // Reset score
+        score = 0;
+        scoreDisplay.textContent = "Score: " + score;
+
+        // Reset timer
+        time = 10;
+        timerDisplay.textContent = time;
+
+        // Stop old timer
+        if (countdown) {
+            clearInterval(countdown);
+        }
+
+        // Start new timer
+        countdown = setInterval(() => {
+            time--;
+            timerDisplay.textContent = time;
+
+            if (time === 0) {
+                clearInterval(countdown);
+                alert("Time's up! Your score: " + score);
+            }
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>
