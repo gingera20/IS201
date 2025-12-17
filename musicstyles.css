@@ -1,5 +1,5 @@
  body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-left: 20px; /* adjust the value as you like */
             color: rgb(197, 198, 211);
             background-size: cover;       /* stretches image to cover entire page */
@@ -39,7 +39,10 @@
             border-style: solid;
         }
 
-        
+        ul {
+            list-style-type: none; /* removes the bullets */
+            padding-left: 0;       /* optional: removes the default indent */
+        }
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 aspect ratio */
