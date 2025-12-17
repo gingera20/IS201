@@ -1,0 +1,151 @@
+<!-- Music page. Include a:
+ unordered list embedded in an ordered list
+ one image not from the bootstrap theme
+ embedded youtube video
+ on-page anchor
+ custom background color or image
+ 
+ stylesheet
+ at least 4 style definitions
+ specify color
+ specify font family
+ three divs for positioning and styling blocks of content
+ 
+ live, interactive Tableau graph
+ 
+ Navigation back to progessional pages (professional pages don't need a link to scratch page)-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginger's Music</title>
+    <link href="musicstyles.css" rel="stylesheet" />
+
+ </head>
+ <body>
+    <a href="../index.html" id="top">About Ginger</a> |
+    <a href="../game.html">Play a Game</a>
+<div class="header-container">
+    <h1>Ginger's Music Taste</h1>
+    <div class="button-container">
+        <a href="#bottom" class="btn">Favorite Artist</a>
+        <a href="#data" class="btn">Spotify Over the Decades</a>
+    </div>
+</div>
+
+<br><br>
+    <h3>Top 3 music genres and top 5 songs from each genre:</h3>
+    
+
+ <div class="bullets"> 
+     <img src="images/tyler.jpg" alt="Tyler, the Creator" height="150"> 
+    <ul>
+        <li class="box">Slow R&B
+            <ol>
+                <li>SWEET/I THOUGHT YOU WANTED TO DANCE, by Tyler, the Creator</li>
+                <li>After the Storm, by Kali Uchis</li>
+                <li>Nobody Gets Me, by SZA</li>
+                <li>Pink + White, by Frank Ocean</li>
+                <li>Sure Thing, by Miguel</li>
+            </ol>
+        </li>
+    </ul>
+     <img src="images/Billy-Currington-1.jpg" alt="Billy Currington" height="150">
+    <ul>  
+        <li class="box">Summer Country
+            <ol>
+                <li>Good Directions, by Billy Currington</li>
+                <li>Buy Me a Boat, by Chris Janson</li>
+                <li>Life is Good, by Kenny Chesney</li>
+                <li>Chicken Fried, by Zac Brown Band</li>
+                <li>Chattahoochee, by Alan Jackson</li>
+            </ol>
+        <li>
+    </ul>
+    <img src="images/macmiller.jpg" alt="Mac Miller" height="150">
+    <ul>   
+        <li class="box">Party Music
+            <ol>
+                <li>Love Lost, by Mac Miller</li>
+                <li>Hotel Room Service, by Pitbull</li>
+                <li>Tonight Tonight, by Hot Chelle Rae</li>
+                <li>Ridin' Solo, by Jason Derulo</li>
+                <li>Pretty Boy Swag, by Soulja Boy</li>
+            </ol>
+        </li>
+    </ul>
+</div> 
+<h1 id="bottom"><br>Meet Tyler</h1><br>
+<div class="video-wrapper">
+    <iframe 
+        src="https://www.youtube.com/embed/rGC2-sM9SXo?si=1FNsFHLTfv7A08Af&amp;end=56" 
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 id="data"><br>Spotify Data</h1><br>
+<div 
+        class='tableauPlaceholder' 
+        id='viz1765046902946' 
+        style='position: relative'>
+        <noscript>
+    <a href='#'>
+    <img alt='Overview ' 
+        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CK&#47;CKY548345&#47;1_rss.png' 
+        style='border: none' /></a></noscript><object 
+        class='tableauViz'  
+        style='display:none;'>
+    <param name='host_url' 
+        value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+    <param 
+        name='embed_code_version' 
+        value='3' /> 
+    <param 
+        name='path' 
+        value='shared&#47;CKY548345' /> 
+    <param 
+        name='toolbar' 
+        value='yes' />
+    <param 
+        name='static_image' 
+        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CK&#47;CKY548345&#47;1.png' /> 
+    <param 
+        name='animate_transition' 
+        value='yes' />
+    <param 
+        name='display_static_image' 
+        value='yes' />
+    <param 
+        name='display_spinner' 
+        value='yes' />
+    <param 
+        name='display_overlay' 
+        value='yes' />
+    <param n
+        ame='display_count' 
+        value='yes' />
+    <param 
+        name='language' 
+        value='en-US' />
+        </object>
+</div>                
+    <script 
+        type='text/javascript'>                    
+    var divElement = document.getElementById('viz1765046902946');         
+    var vizElement = divElement.getElementsByTagName('object')[0];                  
+    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1300px';vizElement.style.height='977px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1300px';vizElement.style.height='977px';} else { vizElement.style.width='100%';vizElement.style.height='2477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+</div>
+<div class="tableau-wrapper">
+    <div class='tableauPlaceholder' id='viz1765046902946' style='position: relative'>
+        <!-- everything inside stays the same -->
+    </div>
+</div>
+<br>
+Back to the <a href="#top">top</a>
+ </body>
+ </html>
